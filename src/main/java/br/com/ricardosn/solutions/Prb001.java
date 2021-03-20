@@ -1,7 +1,7 @@
-package br.com.ricardosn.project.euler.solutions;
+package br.com.ricardosn.solutions;
 
 public class Prb001 {
-    
+
     public int run() {
         int result = 0;
 
