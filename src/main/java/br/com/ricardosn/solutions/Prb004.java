@@ -2,15 +2,13 @@ package br.com.ricardosn.solutions;
 
 public class Prb004 {
 
-    public long run() {
-        long largestPalindrome = 0;
-
+    public int run() {
+        int largestPalindrome = 0;
 
         for (int i = 100; i <= 999; i++) {
             for (int j = 100; j <= 999; j++) {
                 int prod = i * j;
 
-                // is palindrome?
                 if(isPalindrome(prod) && prod > largestPalindrome) {
                     largestPalindrome = prod;
                 }
@@ -20,21 +18,14 @@ public class Prb004 {
         return largestPalindrome;
     }
 
-    public boolean isPalindrome(long number) {
-        String numberString = String.valueOf(number);
-        int numberStringLength = numberString.length();
+    public String reverseString(String number) {
+        return new StringBuilder(number).reverse().toString();
+    }
 
-        String numberStringFirstHalf = numberString.substring(0, numberStringLength / 2);
-        String numberStringSecondHalf = numberString.substring(numberStringLength / 2, numberStringLength);
+    public boolean isPalindrome(int number) {
+        String numberStr = String.valueOf(number);
+        String reverseString = reverseString(String.valueOf(number));
 
-        StringBuilder sb = new StringBuilder();
-
-        for(int i = numberStringSecondHalf.length() - 1; i >= 0; i--) {
-            sb.append(numberStringSecondHalf.charAt(i));
-        }
-
-        String numberStringSecondHalfCompare = sb.toString();
-
-        return numberStringFirstHalf.equals(numberStringSecondHalfCompare);
+        return numberStr.equals(reverseString);
     }
 }
