@@ -1,6 +1,13 @@
 package br.com.ricardosn.solutions;
 
-public class Prb003 {
+/*
+ * Project Euler - problem 003
+ * */
+public final class Prb003 {
+
+    public static void main(String[] args) {
+        System.out.println(new Prb003().run());
+    }
 
     public long run() {
 

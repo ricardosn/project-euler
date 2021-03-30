@@ -1,6 +1,13 @@
 package br.com.ricardosn.solutions;
 
-public class Prb004 {
+/*
+ * Project Euler - problem 004
+ * */
+public final class Prb004 {
+
+    public static void main(String[] args) {
+        System.out.println(new Prb004().run());
+    }
 
     public int run() {
         int largestPalindrome = 0;

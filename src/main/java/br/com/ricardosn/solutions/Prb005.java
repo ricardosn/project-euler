@@ -1,6 +1,13 @@
 package br.com.ricardosn.solutions;
 
-public class Prb005 {
+/*
+ * Project Euler - problem 005
+ * */
+public final class Prb005 {
+
+    public static void main(String[] args) {
+        System.out.println(new Prb005().run());
+    }
 
     public int run() {
         boolean evenlyDivisible = false;

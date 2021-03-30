@@ -1,6 +1,13 @@
 package br.com.ricardosn.solutions;
 
-public class Prb006 {
+/*
+ * Project Euler - problem 006
+ * */
+public final class Prb006 {
+
+    public static void main(String[] args) {
+        System.out.println(new Prb006().run());
+    }
 
     public int run() {
         int sumOfSquares = 0;
