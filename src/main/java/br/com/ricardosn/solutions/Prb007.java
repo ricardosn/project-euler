@@ -15,7 +15,7 @@ public final class Prb007 {
         while(countFindPrime < primeNumberPosition) {
             int countIsPrime = 0;
 
-            for(int i = 1; i <= x; i ++) {
+            for(int i = 1; i <= x; i++) {
 
                 if(x % i == 0)
                     countIsPrime++;
