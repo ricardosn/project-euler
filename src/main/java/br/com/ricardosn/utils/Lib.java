@@ -1,4 +1,4 @@
-package utils;
+package br.com.ricardosn.utils;
 
 public final class Lib {
 
