@@ -2,6 +2,26 @@ package br.com.ricardosn.utils;
 
 public final class Lib {
 
+    public static boolean isPrime(int n) {
+
+        if(n < 0)
+            throw new IllegalArgumentException("Negative number");
+
+        if(n == 0 || n == 1)
+            return false;
+        else if(n == 2)
+            return true;
+        else {
+            if (n % 2 == 0)
+                return false;
+            for (int i = 3, end = (int)Math.sqrt(n); i <= end; i += 2) {
+                if (n % i == 0)
+                    return false;
+            }
+            return true;
+        }
+    }
+
     public static int[] listPrimes(int n) {
         boolean[] isPrime = sieveOfEratosthenes(n);
         int count = 0;
